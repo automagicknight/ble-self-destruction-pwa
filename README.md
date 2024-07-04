@@ -1,1 +1,68 @@
-# ble-self-destruction-pwa
+# BLE Self-Destruction PWA
+
+This project is a Progressive Web Application (PWA) that allows users to scan for Bluetooth Low Energy (BLE) devices and initiate a self-destruction sequence on a selected device. The application is built using HTML, CSS, and JavaScript, with support for service workers to enable offline functionality.
+
+## Features
+
+- Scan for nearby BLE devices
+- Display a list of discovered devices
+- Connect to a selected BLE device
+- Send a self-destruction command to the device
+- Offline support via service workers
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/AUTOMAGICKNIGHT/ble-self-destruction-pwa.git
+    cd ble-self-destruction-pwa
+    ```
+
+2. Open the project directory in your code editor.
+
+3. Serve the application using a local web server. For example, using Python:
+    ```bash
+    python -m http.server
+    ```
+
+4. Open your browser and navigate to `http://localhost:8000`.
+
+## Usage
+
+1. Click the "Scan for BLE Devices" button to start scanning for nearby BLE devices.
+2. Select a device from the list by clicking on it.
+3. The application will connect to the selected device and send the self-destruction command.
+
+## File Structure
+
+```
+pwa/
+├── index.html
+├── style.css
+├── app.js
+├── service-worker.js
+└── manifest.json
+```
+
+- **index.html**: The main HTML file that contains the structure of the application.
+- **style.css**: The CSS file for styling the application.
+- **app.js**: The JavaScript file that handles BLE scanning and device communication.
+- **service-worker.js**: The service worker file for offline support.
+- **manifest.json**: The web app manifest file that defines the PWA metadata.
+
+## PWA Features
+
+- **Manifest File**: The `manifest.json` file provides metadata for the PWA, including the name, short name, start URL, display mode, background color, theme color, and icons.
+- **Service Worker**: The `service-worker.js` file enables offline support by caching essential files and serving them when the network is unavailable.
+
+
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or new features to suggest.
+
+## Acknowledgements
+
+This project was inspired by the potential of PWA technology and BLE applications.
+
+```
